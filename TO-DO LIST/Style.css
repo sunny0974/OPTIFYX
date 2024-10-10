@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg'); /* Add the background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(64, 140, 246, 0.954);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #070707;
+}
+
+h1 i {
+    color: #08eaad; /* Green color for the icon */
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5em; /* Icon size */
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: 75%;
+    padding: 15px;
+    border: 1px solid #090909;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#add-task-btn {
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item input {
+    flex-grow: 1;
+    margin-right: 10px; /* Space between input field and buttons */
+    padding: 5px;
+    border: none;
+    background: none;
+}
+
+.task-item button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px; /* Add space between buttons */
+}
+
+.task-item button.edit-task {
+    color: #188431; /* Color for Edit/Save button */
+}
+
+.task-item button.delete-task {
+    color: #dc3545; /* Color for Delete button */
+}
+
+.task-item button:hover {
+    opacity: 0.8; /* Change opacity on hover for all buttons */
+}
